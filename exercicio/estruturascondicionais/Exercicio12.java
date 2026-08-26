@@ -3,10 +3,12 @@ package flamingo.aprendendo.basico.exercicio.estruturascondicionais;
 public class Exercicio12 {
     static void main(String[] args) {
         byte nota = 8;
-        if(nota >=7) {
-            System.out.println("Aprovado");
+        String mensagem;
+        if (nota >= 7) {
+            mensagem = "Aprovado";
         } else {
-            System.out.println("Reprovado");
+            mensagem = "Reprovado";
         }
+        System.out.println(mensagem);
     }
 }

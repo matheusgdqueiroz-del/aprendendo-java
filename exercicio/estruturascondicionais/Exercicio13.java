@@ -4,10 +4,12 @@ public class Exercicio13 {
     static void main(String[] args) {
         double saldo = 200;
         double produto = 120;
-        if(saldo >= produto) {
-            System.out.println("Compra aprovada");
+        String mensagem;
+        if (saldo >= produto) {
+            mensagem = "Compra aprovada";
         } else {
-            System.out.println("Saldo insuficiente");
+            mensagem = "Saldo insuficiente";
         }
+        System.out.println(mensagem);
     }
 }

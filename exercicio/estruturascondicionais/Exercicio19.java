@@ -3,10 +3,12 @@ package flamingo.aprendendo.basico.exercicio.estruturascondicionais;
 public class Exercicio19 {
     static void main(String[] args) {
         double valorCompra = 300;
-        if(valorCompra >= 150) {
-            System.out.println("Frete grátis");
+        String mensagem;
+        if (valorCompra >= 150) {
+            mensagem = "Frete grátis";
         } else {
-            System.out.println("Frete de 20 reais");
+            mensagem = "Frete de 20 reais";
         }
+        System.out.println(mensagem);
     }
 }

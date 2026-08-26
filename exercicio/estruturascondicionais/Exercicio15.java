@@ -3,10 +3,12 @@ package flamingo.aprendendo.basico.exercicio.estruturascondicionais;
 public class Exercicio15 {
     static void main(String[] args) {
         long numero = 20;
-        if (numero >=0) {
-            System.out.println("Número positivo");
+        String mensagem;
+        if (numero >= 0) {
+            mensagem = "Número positivo";
         } else {
-            System.out.println("Número negativo");
+            mensagem = "Número negativo";
         }
+        System.out.println(mensagem);
     }
 }

@@ -3,10 +3,12 @@ package flamingo.aprendendo.basico.exercicio.estruturascondicionais;
 public class Exercicio18 {
     static void main(String[] args) {
         long numero = 20;
+        String mensagem;
         if (numero % 2 == 0) {
-            System.out.println("Número par");
+            mensagem = "Número par";
         } else {
-            System.out.println("Número impar");
+            mensagem = "Número ímpar";
         }
+        System.out.println(mensagem);
     }
 }

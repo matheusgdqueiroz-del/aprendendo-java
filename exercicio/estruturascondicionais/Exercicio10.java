@@ -2,10 +2,11 @@ package flamingo.aprendendo.basico.exercicio.estruturascondicionais;
 
 public class Exercicio10 {
     static void main(String[] args) {
-    byte idade = 17;
-    if(idade >= 16) {
-        System.out.println("Entrada permitida no evento");
-    }
-
+        byte idade = 17;
+        String mensagem = "";
+        if (idade >= 16) {
+            mensagem = "Entrada permitida no evento";
+        }
+        System.out.println(mensagem);
     }
 }

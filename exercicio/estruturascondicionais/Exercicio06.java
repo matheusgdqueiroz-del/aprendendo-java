@@ -3,8 +3,10 @@ package flamingo.aprendendo.basico.exercicio.estruturascondicionais;
 public class Exercicio06 {
     static void main(String[] args) {
         boolean usuarioLogado = true;
-        if(usuarioLogado) {
-            System.out.println("Bem-vindo ao sistema!");
+        String mensagem = "";
+        if (usuarioLogado) {
+            mensagem = "Bem-vindo ao sistema!";
         }
+        System.out.println(mensagem);
     }
 }

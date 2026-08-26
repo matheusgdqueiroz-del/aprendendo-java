@@ -4,10 +4,12 @@ public class Exercicio17 {
     static void main(String[] args) {
         byte idade = 27;
         boolean temCNH = true;
-        if(idade >= 18 && temCNH) {
-            System.out.println("Pode dirigir");
+        String mensagem;
+        if (idade >= 18 && temCNH) {
+            mensagem = "Pode dirigir";
         } else {
-            System.out.println("Não pode dirigir");
+            mensagem = "Não pode dirigir";
         }
+        System.out.println(mensagem);
     }
 }
