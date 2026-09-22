@@ -18,6 +18,7 @@ O for pode começar no último índice e ir diminuindo.
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+
         
 
         sc.close();
