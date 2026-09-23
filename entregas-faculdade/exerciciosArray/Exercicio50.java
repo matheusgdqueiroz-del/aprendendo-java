@@ -29,7 +29,14 @@ Use variáveis auxiliares para guardar o maior total.
      */
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int[][] estoque = new int[3][5];
 
+        for (int i = 0; i < estoque.length; i++) {
+            for (int j = 0; j < estoque[i].length; j++) {
+                System.out.printf("Digite a quantidade do %dº produto na %dª loja: ", j + 1, i + 1);
+                estoque[i][j] = sc.nextInt();
+            }
+        }
         
 
         sc.close();

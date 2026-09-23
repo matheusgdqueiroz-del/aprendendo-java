@@ -16,8 +16,16 @@ Use numeros[i] * 2.
      */
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        double[] numeros = new double[5];
 
-        
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.printf("Digite o %dº número: ", i + 1);
+            numeros[i] = sc.nextDouble();
+        }
+
+        for (double numero : numeros) {
+            System.out.printf("O dobro de %.0f é %.0f \n", numero, numero * 2);
+        }
 
         sc.close();
     }

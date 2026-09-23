@@ -20,7 +20,14 @@ Compare o total de cada vendedor para descobrir o maior.
      */
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        double[][] vendas = new double[3][4];
 
+        for (int i = 0; i < vendas.length; i++) {
+            for (int j = 0; j < vendas[i].length; j++) {
+                System.out.printf("Digite a %dª venda do %dº vendedor: ", j + 1, i + 1);
+                vendas[i][j] = sc.nextDouble();
+            }
+        }
         
 
         sc.close();

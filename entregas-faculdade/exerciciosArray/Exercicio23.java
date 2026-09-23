@@ -14,10 +14,22 @@ Percorrer o array e multiplicar cada posição pelo número informado.
 Dicas:
 Use numeros[i] * multiplicador.
      */
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        double[] numeros = new double[5];
 
-        
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.printf("Digite o %dº número: ", i + 1);
+            numeros[i] = sc.nextDouble();
+        }
+
+        System.out.println("Digite um número multiplicador: ");
+        double multiplicador = sc.nextDouble();
+
+        for (double numero : numeros) {
+            System.out.printf("%.0f multiplicado por %.0f é %.0f\n", numero, multiplicador, numero * multiplicador);
+        }
+
 
         sc.close();
     }
