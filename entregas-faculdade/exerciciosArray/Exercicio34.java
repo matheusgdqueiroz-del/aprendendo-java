@@ -24,8 +24,15 @@ Comece a variável menor com matriz[0][0].
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
-
+        int menor = matriz[0][0];
+        for (int[] linhas : matriz) {
+            for (int numero : linhas) {
+                if (numero < menor) {
+                    menor = numero;
+                }
+            }
+        }
+        System.out.println("O menor número da matriz é: " + menor);
         sc.close();
     }
 }

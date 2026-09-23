@@ -17,16 +17,21 @@ Some com soma += matriz[i][j].
      */
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[][] matriz = new int[3][3];
+        int[][] numeros = new int[3][3];
 
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.printf("Digite o valor da posição [%d][%d]: ", i, j);
-                matriz[i][j] = sc.nextInt();
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = 0; j < numeros[i].length; j++) {
+            System.out.printf("Digite o valor da posição [%d] [%d]: ", i, j);
+            numeros[i][j] = sc.nextInt();
             }
         }
-        
 
+        int soma = 0;
+        for (int[] linhas : numeros) {
+            for (int numero : linhas )
+            soma += numero;
+        }
+        System.out.println("O total é: " + soma);
         sc.close();
     }
 }

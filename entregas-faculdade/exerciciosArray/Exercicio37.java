@@ -26,7 +26,18 @@ Divida a soma da linha por notas[i].length.
                 notas[i][j] = sc.nextDouble();
             }
         }
-        
+
+        for (int i = 0; i < notas.length; i++) {
+
+            double soma = 0;
+
+            for (int j = 0; j < notas[i].length; j++) {
+                soma += notas[i][j];
+            }
+
+            double media = soma / notas[i].length;
+            System.out.printf("A média do %d° aluno é %.2f\n", i + 1, media);
+        }
 
         sc.close();
     }

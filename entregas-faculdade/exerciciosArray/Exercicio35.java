@@ -25,6 +25,15 @@ A variável somaLinha deve zerar no começo de cada linha.
             }
         }
         
+        int somaLinha = 0;
+
+        for (int i = 0; i < matriz.length; i++) {
+            somaLinha = 0;
+            for (int j = 0; j < matriz[i].length; j++) {
+                somaLinha += matriz[i][j];
+            }
+            System.out.printf("A soma da linha %d é : %d\n", i + 1, somaLinha);
+        }
 
         sc.close();
     }

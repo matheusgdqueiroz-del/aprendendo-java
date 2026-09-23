@@ -24,7 +24,9 @@ Diagonal principal: matriz[0][0], matriz[1][1], matriz[2][2].
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.printf("%d ", matriz[i][i]);
+        }
 
         sc.close();
     }

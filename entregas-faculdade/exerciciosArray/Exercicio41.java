@@ -25,8 +25,19 @@ matriz[0][2], matriz[1][1], matriz[2][0].
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+
+        for (int i = 0; i < matriz.length; i++) {
+
+                System.out.printf("%d ", matriz[i][matriz.length - 1 - i]);
+
+        }
 
         sc.close();
     }
 }
+/*
+1 2 3
+1 2 3
+1 2 3
+
+ */

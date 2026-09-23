@@ -24,7 +24,13 @@ Use if (i == j).
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+
+        int soma = 0;
+
+        for (int i = 0; i < matriz.length; i++) {
+            soma += matriz[i][i];
+        }
+        System.out.println("A soma é : " + soma);
 
         sc.close();
     }

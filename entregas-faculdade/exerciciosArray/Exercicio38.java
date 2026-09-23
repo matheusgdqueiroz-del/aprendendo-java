@@ -1,6 +1,7 @@
 package exerciciosArray;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Exercicio38 {
     /*
@@ -21,6 +22,7 @@ O índice do aluno no array de nomes deve ser o mesmo índice da linha na matriz
         String[] alunos = new String[4];
         double[][] notas = new double[4][3];
 
+
         for (int i = 0; i < alunos.length; i++) {
             System.out.printf("Digite o nome do %dº aluno: ", i + 1);
             alunos[i] = sc.nextLine();
@@ -30,7 +32,30 @@ O índice do aluno no array de nomes deve ser o mesmo índice da linha na matriz
             }
             sc.nextLine();
         }
-        
+
+
+
+        for (int i = 0; i < alunos.length; i++) {
+            double soma = 0;
+            String situacao = "Reprovado";
+
+            for (int j = 0; j < notas[i].length; j++) {
+                soma += notas[i][j];
+            }
+
+            double media = soma / notas[i].length;
+            if (media >= 7) {
+                situacao = "Aprovado";
+            }
+            System.out.printf("""
+                    ALUNO %d
+                    Nome: %s
+                    Notas: %s
+                    Media: %.2f
+                    Situação: %s
+                    ___________________
+                    """, i + 1, alunos[i], Arrays.toString(notas[i]), media, situacao );
+        }
 
         sc.close();
     }

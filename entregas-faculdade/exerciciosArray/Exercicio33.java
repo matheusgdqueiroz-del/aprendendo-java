@@ -24,7 +24,17 @@ Comece a variável maior com matriz[0][0].
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+
+        int maior = matriz[0][0];
+
+        for (int[] linhas : matriz) {
+            for (int numero : linhas) {
+                if(numero > maior) {
+                    maior = numero;
+                }
+            }
+        }
+        System.out.println("O maior número da matriz é: " + maior);
 
         sc.close();
     }

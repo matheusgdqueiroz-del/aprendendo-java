@@ -24,8 +24,16 @@ Para somar por coluna, o for de fora pode controlar a coluna.
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+
+        for (int i = 0; i < matriz[0].length; i++) {
+            int somaColuna = 0;
+            for (int j = 0; j < matriz.length; j++) {
+                somaColuna += matriz[j][i];
+            }
+            System.out.printf("A soma da coluna %d é: %d\n", i + 1, somaColuna);
+        }
 
         sc.close();
     }
 }
+
