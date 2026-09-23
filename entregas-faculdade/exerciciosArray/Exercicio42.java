@@ -24,7 +24,6 @@ Use % 2 == 0.
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
 
         sc.close();
     }
