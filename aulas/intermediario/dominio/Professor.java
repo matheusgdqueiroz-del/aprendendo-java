@@ -1,7 +1,9 @@
 package intermediario.dominio;
 
 public class Professor {
-    String nome;
-    int idade;
-    String disciplina;
+    // nome, idade, disciplina, salario
+    public String nome;
+    public int idade;
+    public String disciplina;
+    public double salario;
 }
