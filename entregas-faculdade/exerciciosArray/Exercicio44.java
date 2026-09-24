@@ -27,7 +27,24 @@ Mostre os índices i e j.
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+
+        boolean encontrado = false;
+
+        System.out.printf("Digite um número para pesquisar: ");
+        int pesquisa = sc.nextInt();
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (pesquisa == matriz[i][j]) {
+                    encontrado = true;
+                }
+            }
+        }
+        if (encontrado) {
+            System.out.printf("%d encontrado na matriz!", pesquisa);
+        } else {
+            System.out.printf("%d não encontrado na matriz!", pesquisa);
+        }
 
         sc.close();
     }

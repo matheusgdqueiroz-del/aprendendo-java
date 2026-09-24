@@ -26,7 +26,27 @@ Igual a 0 é zero.
                 matriz[i][j] = sc.nextInt();
             }
         }
-        
+        int positivos = 0;
+        int negativos = 0;
+        int zero = 0;
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if(matriz[i][j] > 0) {
+                    positivos++;
+                } else if (matriz[i][j] < 0) {
+                    negativos++;
+                } else {
+                    zero++;
+                }
+            }
+        }
+        System.out.printf("""
+                RELATÓRIO DA MATRIZ
+                Positivos: %d 
+                Negativos: %d
+                Zeros: %d
+                """, positivos, negativos, zero);
 
         sc.close();
     }

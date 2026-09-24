@@ -24,6 +24,13 @@ Use % 2 == 0.
                 matriz[i][j] = sc.nextInt();
             }
         }
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (matriz[i][j] % 2 == 0) {
+                    System.out.printf("%d é par\n", matriz[i][j]);
+                }
+            }
+        }
 
         sc.close();
     }
