@@ -1,4 +1,4 @@
-package unidade03;
+package java_qa.unidade03;
 
 public class ValidadorAcesso {
 
